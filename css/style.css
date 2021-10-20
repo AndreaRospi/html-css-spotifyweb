@@ -25,6 +25,13 @@ main::after {
     height: calc(100% - 80px);
 }
 
+.logo img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+}
+
 .nav-bottom {
     height: 80px;
 }
