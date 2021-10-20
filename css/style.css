@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .left {
     float: left;
 }
@@ -29,14 +33,14 @@ main::after {
 }
 
 .nav-top {
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
 }
 
-.logo{
-    margin-bottom: 20px;
+.logo {
+    margin-bottom: 15px;
 }
 
-.logo #logo-small{
+.logo #logo-small {
     height: 45px;
     margin: 0 auto;
     display: block;
@@ -44,22 +48,30 @@ main::after {
     cursor: pointer;
 }
 
-.logo #logo-standard{
+.logo #logo-standard {
     display: none;
 }
 
-.nav-main img{
-    height: 40px;
+.nav-main img {
+    height: 35px;
     margin: 0 4px;
     cursor: pointer;
 }
 
-#grey{
+#grey {
     filter: invert(0.3);
 }
 
-.nav-main span{
+.nav-main span,
+.nav-bottom span{
     display: none;
+    color: #6e6e6e;
+}
+
+#white {
+    color: white;
+    font-weight: bold;
+
 }
 
 .nav-playlist {
@@ -67,17 +79,24 @@ main::after {
 }
 
 .nav-bottom {
-    height: 80px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.nav-bottom .download{
+.nav-bottom .download {
     height: 20px;
-    margin: 5px 10px;
     cursor: pointer;
 }
 
-.nav-bottom .profile{
-    height: 40px;
+.nav-bottom hr{
+    display: none;
+}
+
+.nav-bottom .profile {
+    height: 30px;
     margin: 0 4px;
     background-color: #808080;
     border-radius: 50%;
@@ -92,7 +111,7 @@ main::after {
     overflow-y: auto;
 }
 
-.call-to-action{
+.call-to-action { 
     position: fixed;
     top: 0;
     right: 0;
@@ -126,10 +145,10 @@ footer {
 }
 
 .debug .nav-top {
-    background-color: lightgrey;
+    background-color: magenta;
 }
 
-.nav-bottom {
+.debug .nav-bottom {
     background-color: yellow
 }
 
@@ -140,26 +159,47 @@ footer {
         width: 210px;
     }
 
-    .logo{
-        display: flex;
-        justify-content: center;
+    .logo {
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .logo #logo-small{
+    .logo #logo-small {
         display: none;
     }
 
-    .logo #logo-standard{
+    .logo #logo-standard  {
         display: inline-block;
         height: 50px;
     }
 
-    .nav-main span{
+    .nav-main span,
+    .nav-bottom span {
         display: inline;
     }
-    
 
+    .nav-main .nav-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 
+    .nav-bottom{
+        display: block;
+    }
+
+    .nav-bottom .nav-icon {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .nav-bottom hr{
+        display: block;
+        border: 1px solid #6e6e6e;
+        width: 90%;
+        margin: 5px auto;
+    }
 
     .nav-playlist {
         /* display: block; */

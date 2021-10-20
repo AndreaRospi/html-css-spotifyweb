@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>spotify</title>
 </head>
 <body class="debug">
@@ -26,19 +29,29 @@
 
                 <!-- inizio nav-main -->
                 <div class="nav-main">
-                    <img src="img/home.svg" alt="icona home">
-                    <span>Home</span>
 
-                    <img id="grey" src="img/search.svg" alt="icona ricerca">
-                    <span>Cerca</span>
-
-                    <img id="grey" src="img/libreria.svg" alt="icona libreria">
-                    <span>La tua libreria</span>
+                    <div class="nav-icon">
+                        <img src="img/home.svg" alt="icona home">
+                        <span id="white">Home</span>
+                    </div>
+                    
+                    <div class="nav-icon">
+                        <img id="grey" src="img/search.svg" alt="icona ricerca">
+                        <span>Cerca</span>
+                    </div>
+                   
+                    <div class="nav-icon">
+                        <img id="grey" src="img/libreria.svg" alt="icona libreria">
+                        <span>La tua libreria</span>
+                    </div>
+                   
                 </div>
                 <!-- /nav main -->
 
                 <!-- inizio nav-playlist -->
-                <div class="nav-playlist"></div>
+                <div class="nav-playlist">
+                    <h4>Playlist</h4>
+                </div>
                 <!-- /nav-playlist -->
 
 
@@ -47,9 +60,17 @@
 
             <!-- inizio nav bottom -->
             <div class="nav-bottom">
-                <img class="download" id="grey" src="img/download.svg" alt="icona download">
+                <div class="nav-icon">
+                    <img class="download" id="grey" src="img/download.svg" alt="icona download">
+                    <span>Installa app</span>
+                </div>
 
-                <img class="profile" src="img/profile.svg" alt="icona profilo">
+                <hr>
+
+                <div class="nav-icon">
+                    <img class="profile" src="img/profile.svg" alt="icona profilo">
+                    <span>John Doe</span>
+                </div>
             </div>
             <!-- / nav bottom -->
 
