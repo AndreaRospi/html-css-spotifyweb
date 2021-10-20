@@ -140,6 +140,11 @@ footer {
         width: 210px;
     }
 
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
     .logo #logo-small{
         display: none;
     }
@@ -148,6 +153,11 @@ footer {
         display: inline-block;
         height: 50px;
     }
+
+    .nav-main span{
+        display: inline;
+    }
+    
 
 
 
