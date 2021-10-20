@@ -21,6 +21,13 @@ main::after {
     clear: both;
 }
 
+.col-sn {
+    width: 50px;
+    height: 100%;
+    min-height: 480px;
+    background-color:black;
+}
+
 .nav-top {
     height: calc(100% - 80px);
 }
@@ -29,7 +36,7 @@ main::after {
     margin-bottom: 20px;
 }
 
-.logo img{
+.logo #logo-small{
     height: 45px;
     margin: 0 auto;
     display: block;
@@ -37,9 +44,14 @@ main::after {
     cursor: pointer;
 }
 
+.logo #logo-standard{
+    display: none;
+}
+
 .nav-main img{
     height: 40px;
     margin: 0 4px;
+    cursor: pointer;
 }
 
 #grey{
@@ -50,8 +62,18 @@ main::after {
     display: none;
 }
 
+.nav-playlist {
+    display: none;
+}
+
 .nav-bottom {
     height: 80px;
+}
+
+.nav-bottom .download{
+    height: 20px;
+    margin: 5px 10px;
+    cursor: pointer;
 }
 
 .nav-bottom .profile{
@@ -60,22 +82,7 @@ main::after {
     background-color: #808080;
     border-radius: 50%;
     padding: 3px;
-}
-
-.nav-bottom .download{
-    height: 20px;
-    margin: 5px 10px;
-}
-
-.col-sn {
-    width: 50px;
-    height: 100%;
-    min-height: 480px;
-    background-color:black;
-}
-
-.nav-playlist {
-    display: none;
+    cursor: pointer;
 }
 
 .col-dx {
@@ -132,6 +139,17 @@ footer {
     .col-sn {
         width: 210px;
     }
+
+    .logo #logo-small{
+        display: none;
+    }
+
+    .logo #logo-standard{
+        display: inline-block;
+        height: 50px;
+    }
+
+
 
     .nav-playlist {
         /* display: block; */
