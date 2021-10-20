@@ -202,7 +202,12 @@ footer {
     }
 
     .nav-playlist {
-        /* display: block; */
+        display: block;
+    }
+
+    .nav-playlist h4{
+        text-transform: uppercase;
+        color: white;
     }
 
     .col-dx {
