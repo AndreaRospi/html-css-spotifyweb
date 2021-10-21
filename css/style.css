@@ -153,6 +153,20 @@ footer {
     z-index: 1;
 }
 
+footer .player-left {
+    width: 20%;
+    height: 100%;
+}
+
+footer .player-center {
+    width: 60%;
+    height: 100%;
+}
+
+footer .player-right {
+    width: 20%;
+    height: 100%;
+}
 
 /* debug */
 
@@ -170,12 +184,24 @@ footer {
     background-color: yellow
 }
 
+.debug .player-left{
+    background-color: indigo;
+}
+
+.debug .player-center{
+    background-color: ;
+}
+
 
 /* media query */
 @media screen and (min-width: 480px){
     .col-sn {
         width: 210px;
         height: calc(100vh - 100px)
+    }
+
+    .nav-top {
+        overflow: hidden;
     }
 
     .logo {
