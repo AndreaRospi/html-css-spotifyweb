@@ -115,7 +115,7 @@ main::after {
 .col-dx {
     width: calc(100% - 50px);
     height: 100%;
-    background-color: grey;
+    background-color: #141922;
     overflow-y: auto;
 }
 
@@ -131,10 +131,6 @@ main::after {
     text-align: right;
 }
 
-.col-dx nav{
-    margin-top: 90px;
-}
-
 .button-up{
     color: white;
     text-transform: uppercase;
@@ -144,6 +140,38 @@ main::after {
     margin-right: 5px;
     cursor: pointer;
 }
+
+.col-dx nav{
+    margin-top: 90px;
+}
+
+.nav-bar-dx nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.nav-bar-dx nav ul li {
+    margin: 15px 10px;
+}
+
+.nav-bar-dx nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #797c80;
+}
+
+#linea-g{
+    height: 2px;
+    width: 32px;
+    background-color: #adff2f;
+    margin: 0 auto;
+}
+
+
+
 
 
 
