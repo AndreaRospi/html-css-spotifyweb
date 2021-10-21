@@ -155,24 +155,44 @@ footer {
 }
 
 footer .player-left {
-    width: calc(100% / 3);
+    width: 25%;
     height: 100%;
+    padding: 4px;
     display: flex;
     align-items: center;
+    color: #6e6e6e;
 }
 
 .player-left .album img{
-    width: 30%;
+    height: 35px;
 
 }
 
+.player-left .titolo{
+    margin: 0 7px;
+}
+
+.titolo span{
+    font-size: 13px;
+}
+
+.canzone-title{
+    display: block;
+    font-size: 15px;
+    color: white;
+}
+
+.icon-footer i{
+    font-size: 12px;
+}
+
 footer .player-center {
-    width: calc(100% / 3);
+    width: 50%;
     height: 100%;
 }
 
 footer .player-right {
-    width: calc(100% / 3);
+    width: 25%;
     height: 100%;
 }
 
@@ -206,7 +226,7 @@ footer .player-right {
 
 
 /* media query */
-@media screen and (min-width: 480px){
+@media screen and (min-width: 490px){
     .col-sn {
         width: 210px;
         height: calc(100vh - 100px)
