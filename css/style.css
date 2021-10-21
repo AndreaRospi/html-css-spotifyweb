@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color:white
 }
 
 body{
@@ -170,6 +171,85 @@ main::after {
     margin: 0 auto;
 }
 
+.playlist-recenti{
+    padding: 15px;
+}
+
+.playlist-recenti h2{
+    color: white;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.playlist-recenti span{
+    color: #797c80;
+}
+
+.playlist-recenti .box .card h4{
+    margin: 5px 0;
+}
+
+
+.box{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card {
+    width: calc( 50% - 10px);
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.playlist-create{
+    padding: 15px;
+}
+
+.playlist-create h2{
+    margin-bottom: 5px;
+}
+
+.playlist-create span{
+    font-size: 13px;
+    color: #797c80;
+}
+
+.playlist-create .box{
+    margin-top: 15px;
+}
+
+.playlist-create .box .card h4{
+    margin-top: 5px;
+}
+
+.artisti-popolari{
+    padding: 15px;
+}
+
+.artisti-popolari h2{
+    margin-bottom: 5px;
+}
+
+.artisti-popolari span{
+    font-size: 13px;
+    color: #797c80;
+}
+
+.artisti-popolari .box{
+    margin-top: 15px;
+}
+
+.artisti-popolari .box .card h4{
+    margin-top: 5px;
+}
+
+.circle{
+    border-radius: 50%;
+}
 
 
 
