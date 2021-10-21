@@ -127,9 +127,10 @@ main::after {
     width: calc(100% - 50px);
     height: 90px;
     line-height: 90px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     z-index: 2;
     text-align: right;
+    margin-right: 10px;
 }
 
 .button-up{
@@ -171,6 +172,22 @@ main::after {
     margin: 0 auto;
 }
 
+
+.box{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card {
+    width: calc( 50% - 10px);
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
 .playlist-recenti{
     padding: 15px;
 }
@@ -189,21 +206,6 @@ main::after {
     margin: 5px 0;
 }
 
-
-.box{
-    display: flex;
-    flex-wrap: wrap
-}
-
-.card {
-    width: calc( 50% - 10px);
-    margin: 5px 5px;
-    text-align: center;
-}
-
-.card img{
-    width: 100%;
-}
 
 .playlist-create{
     padding: 15px;
@@ -259,6 +261,7 @@ main::after {
 /* footer */
 footer {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     background-color: rgb(44, 44, 44);
@@ -267,7 +270,7 @@ footer {
 }
 
 footer .player-left {
-    width: 25%;
+    width: 200px;
     height: 100%;
     padding: 4px;
     display: flex;
@@ -307,13 +310,17 @@ footer .player-center {
 }
 
 .player-center .player{
-    width: 100%;
+    width: 200px;
     height: 50%;
-    background-color: crimson;
     font-size: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto 
+}
+
+.player-center .player i:nth-last-of-type(3){
+    margin: 0 15px;
 }
 
 #play {
@@ -324,17 +331,20 @@ footer .player-center {
     width: 100%;
     height: 50%;
     font-size: 13px;
-    background-color: darkmagenta;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .player-center .barra-scorrimento{
-    width: 65%;
+    width: 80%;
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 2em;
+}
+
+.player-center .barra-minuti span{
+    margin: 0 5px;
 }
 
 .player-center .barra-scorrimento .avanzamento {
@@ -345,7 +355,7 @@ footer .player-center {
 }
 
 footer .player-right {
-    width: 25%;
+    width: 200px;
     height: 100%;
     font-size: 13px;
     display: flex;
@@ -515,4 +525,21 @@ footer .player-right {
     }
 
 
+}
+
+@media screen and (min-width: 576px){
+    .card {
+        width: calc( 25% - 10px);
+        margin: 5px 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .card {
+        width: calc( 16.66% - 10px);
+        margin: 5px 5px;
+        text-align: center;
+        max-width: 180px;
+    }
 }
