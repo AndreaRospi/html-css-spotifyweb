@@ -17,7 +17,6 @@ body{
 main {
     width: 100%;
     height: calc(100vh - 100px);
-    background-color: yellow;
 }
 
 main::after {
@@ -25,6 +24,8 @@ main::after {
     content:'';
     clear: both;
 }
+
+/* ****** inizio colonna sinistra ****** */
 
 .col-sn {
     width: 50px;
@@ -113,12 +114,18 @@ main::after {
 
 }
 
+/* ****** /colonna sinistra ******  */
+
+/* ****** inizio colonna destra ******  */
+
 .col-dx {
     width: calc(100% - 50px);
     height: 100%;
     background-color: #141922;
     overflow-y: auto;
 }
+
+/* sezione buttone upgrade */
 
 .call-to-action { 
     position: fixed;
@@ -142,6 +149,10 @@ main::after {
     margin-right: 5px;
     cursor: pointer;
 }
+
+/* / button upgrade */
+
+/* inizio sezione nav destra */
 
 .col-dx nav{
     margin-top: 90px;
@@ -172,6 +183,9 @@ main::after {
     margin: 0 auto;
 }
 
+/* fine sezione nav destra */
+
+/* inizio sezione playlist */
 
 .box{
     display: flex;
@@ -187,6 +201,8 @@ main::after {
 .card img{
     width: 100%;
 }
+
+/* inizio sezione playlist recenti */
 
 .playlist-recenti{
     padding: 15px;
@@ -205,7 +221,9 @@ main::after {
 .playlist-recenti .box .card h4{
     margin: 5px 0;
 }
+/* /seione playlist recenti */
 
+/* inizio sezione playlist create  */
 
 .playlist-create{
     padding: 15px;
@@ -227,6 +245,9 @@ main::after {
 .playlist-create .box .card h4{
     margin-top: 5px;
 }
+/* /sezione playlist create */
+
+/* sezione artisti popolari */
 
 .artisti-popolari{
     padding: 15px;
@@ -252,11 +273,11 @@ main::after {
 .circle{
     border-radius: 50%;
 }
+/* / sezione artisti popolari */
 
+/* /sezione playlist */
 
-
-
-
+/* ****** / colonna destra ******  */
 
 /* footer */
 footer {
@@ -268,6 +289,8 @@ footer {
     position: fixed;
     z-index: 1;
 }
+
+/* inizio player left */
 
 footer .player-left {
     width: 200px;
@@ -300,6 +323,10 @@ footer .player-left {
 .icon-footer i{
     font-size: 12px;
 }
+
+/* / player left */
+
+/* inizio player center */
 
 footer .player-center {
     width: 50%;
@@ -354,6 +381,10 @@ footer .player-center {
     border-radius: 2em;
 }
 
+/* /player center */
+
+/* inizio player right */
+
 footer .player-right {
     width: 200px;
     height: 100%;
@@ -378,7 +409,9 @@ footer .player-right {
     border-radius: 2em;
 }
 
-/* debug */
+/* / player right */
+
+/* debug
 
 .debug .col-dx p {
     line-height: 30px;
@@ -404,10 +437,11 @@ footer .player-right {
 
 .debug .player-right {
     background-color: rgb(180, 5, 157);
-}
+} */
 
 
 /* media query */
+
 @media screen and (min-width: 490px){
     .col-sn {
         width: 210px;
