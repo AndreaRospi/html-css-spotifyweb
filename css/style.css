@@ -122,10 +122,20 @@ main::after {
     right: 0;
     width: calc(100% - 50px);
     height: 90px;
+    line-height: 90px;
     background-color: rgba(0,0,0,0.4);
     z-index: 2;
     text-align: right;
-    padding: 20px;
+}
+
+.button-up{
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 2em;
+    padding: 10px 30px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 
@@ -162,6 +172,7 @@ footer {
 @media screen and (min-width: 480px){
     .col-sn {
         width: 210px;
+        height: calc(100vh - 100px)
     }
 
     .logo {
@@ -187,6 +198,7 @@ footer {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        cursor: pointer;
     }
 
     .nav-bottom{
@@ -197,6 +209,7 @@ footer {
         display: flex;
         align-items: center;
         margin-left: 5px;
+        cursor: pointer;
     }
 
     .nav-bottom hr{
@@ -209,6 +222,8 @@ footer {
     .nav-playlist {
         display: block;
         margin-left: 10px;
+        height: 100%;
+        overflow: hidden;
     }
 
     .nav-playlist h4{
@@ -219,6 +234,7 @@ footer {
     .newplaylist{
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .plus{
@@ -237,6 +253,8 @@ footer {
 
     .nav-playlist ul{
         list-style: none;
+        height: 80%;
+        overflow-y: auto;
     }
 
     .nav-playlist ul li{
