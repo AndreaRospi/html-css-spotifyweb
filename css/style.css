@@ -221,13 +221,39 @@ footer .player-center {
 .player-center .barra-scorrimento{
     width: 65%;
     height: 5px;
-    background-color: black;
+    background-color: #5a5a5a;
+    border-radius: 2em;
+}
+
+.player-center .barra-scorrimento .avanzamento {
+    height: 5px;
+    width: 20%;
+    background-color: #c1c1c1;
     border-radius: 2em;
 }
 
 footer .player-right {
     width: 25%;
     height: 100%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.player-right .barra-scorrimento{
+    width: 55%;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 2em;
+}
+
+.player-right .barra-scorrimento .avanzamento {
+    height: 5px;
+    width: 20%;
+    background-color: #c1c1c1;
+    border-radius: 2em;
 }
 
 /* debug */
